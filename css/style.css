@@ -1,0 +1,297 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+::selection {
+	background-color: #fff;
+	color: #111;
+	text-shadow: 1px 1px 1px #fff;
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'EBGaramondRegular';
+    src: url('../fonts/ebgaramond-regular.eot');
+    src: url('../fonts/ebgaramond-regular.eot') format('embedded-opentype'),
+         url('../fonts/ebgaramond-regular.woff') format('woff'),
+         url('../fonts/ebgaramond-regular.ttf') format('truetype'),
+         url('../fonts/ebgaramond-regular.svg#EBGaramondRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'VollkornRegular';
+    src: url('../fonts/vollkorn-regular.eot');
+    src: url('../fonts/vollkorn-regular.eot') format('embedded-opentype'),
+         url('../fonts/vollkorn-regular.woff') format('woff'),
+         url('../fonts/vollkorn-regular.ttf') format('truetype'),
+         url('../fonts/vollkorn-regular.svg#VollkornRegular') format('svg');
+}
+
+body{
+	background: url(../img/type.png) repeat;
+}
+
+header{
+	background: url(../img/black-linen.png) repeat;
+	min-height: 100px;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 99;
+	border-top: 1px solid #181818;
+	box-shadow: 0 -4px 10px #181818;
+}
+
+#avatar{
+	position: absolute;
+	bottom: 18px;
+	left: 7%;
+	width: 166px;
+}
+
+#avatar img{
+	float: left;
+}
+
+#avatar .avatar-title{
+	float: left;
+	margin: 15px 0 0 15px;
+	font: normal 18px 'EBGaramondRegular', serif;
+	letter-spacing: -1.5px;
+	color: #666;
+	text-shadow: -1px -1px 1px #111;
+}
+
+nav{
+	
+}
+
+nav ul li{
+	display: inline;
+	margin: 0 15px 0 15px; 
+	font: normal 18px 'EBGaramondRegular', serif;
+	text-shadow: -1px -1px 1px #111;
+}
+
+nav ul li a{
+	color: #666;
+	transition: color 0.5s;
+	-moz-transition:color 0.5s; /* Firefox 4 */
+	-webkit-transition:color 0.5s; /* Safari and Chrome */
+	-o-transition:color 0.5s; /* Opera */
+	text-decoration: none;
+}
+
+	nav ul li a:hover{
+		color: #bbb;
+	}
+
+#container{
+	font-family: 'VollkornRegular';
+}
+
+#container .main-title{
+	font-size: 72px;
+	color: #ccc;
+	text-transform: uppercase;
+}
+
+#container p{
+	line-height: 35px;
+	font-size: 28px;
+	color: #888;
+	text-shadow: 1px 1px 1px #111;
+}
+
+#content{
+	position: absolute;
+	top: 25%;
+	left: 20%;
+	width: 60%;
+	padding-bottom: 100px;
+}
+
+#content h1, #content ul,
+#content p{
+	margin-left: -10%;
+	width: 120%;
+	text-align: center
+}
+
+#content p{
+	margin-top: 20px;
+	margin-bottom: 20px
+}
+
+#content ul li{
+	display: inline;
+}
+
+
+#about{
+	position: absolute;
+	top: 13%;
+	left: 20%;
+	width: 60%;
+	padding-bottom: 100px;
+}
+
+#about h1,
+#about p{
+	text-align: center
+}
+
+#about p{
+	margin-top: 15px;
+}
+
+#works{
+	position: absolute;
+	top: 15%;
+	width: 64%;
+	padding-bottom: 100px;
+	margin: 0 18%;
+}
+
+#works h1{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 20px
+}
+
+#works ul{
+	width: 100%;
+	margin: 0 auto;
+	max-width: 800px;
+
+}
+
+#works ul li{
+	display: block;
+	width: 30%;
+	height: 100%;
+	float: left;
+	background: url(../img/diagmonds.png) repeat;
+	box-shadow: -1px -1px 5px rgba(255,255,255,0.05),
+				inset -1px -1px 3px rgba(0,0,0,1);
+	margin-right: 1.5%;
+	margin-left: 1.5%;
+	margin-bottom: 40px;
+	}
+
+#works ul li h3{
+	font-size: 20px;
+	margin: 15px 0 10px 15px;
+}
+
+#works ul li h3 a{
+	color: #ccc;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #000;
+}
+
+#works ul li hr{
+	border-color: transparent;
+	border-top: 1px solid #1e1e1e;
+	border-bottom: 1px solid #0a0a0a;
+}
+
+#works ul li img{
+	margin: 5px 5% 12px 5%;
+	width: 90%;
+}
+
+#works ul li:nth-child(4n){
+	clear: both;
+}
+
+#works ul li span{
+	display: block;
+	color: #666;
+	font-size: 14px;
+	text-shadow: 1px 1px 1px #000;
+	margin-left: 13px;	
+	margin-bottom: 10px;
+	width: 90%;
+}
+
+.sp-canvas {
+	display: none;
+}
+
+@media screen and (max-width: 40em) {
+	#container .main-title{
+		font-size: 40px;
+	}
+
+	#content{
+		top: 13%;
+	}
+
+	#content p,
+	#about p{
+		font-size: 19px
+	}
+
+	#works ul li{
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	#works ul li{
+		display: block;
+		width: 97%;
+		height: 100%;
+		float: left;
+		background: url(../img/diagmonds.png) repeat;
+		box-shadow: -1px -1px 5px rgba(255,255,255,0.05),
+					inset -1px -1px 3px rgba(0,0,0,1);
+		margin-right: 1.5%;
+		margin-left: 1.5%;
+		margin-bottom: 40px;
+	}
+
+	#works ul li h3{
+		font-size: 18px;
+	}
+}

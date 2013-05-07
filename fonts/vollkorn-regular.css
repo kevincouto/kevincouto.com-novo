@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'VollkornRegular';
+    src: url('vollkorn-regular.eot');
+    src: url('vollkorn-regular.eot') format('embedded-opentype'),
+         url('vollkorn-regular.woff') format('woff'),
+         url('vollkorn-regular.ttf') format('truetype'),
+         url('vollkorn-regular.svg#VollkornRegular') format('svg');
+}
